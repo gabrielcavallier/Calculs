@@ -17,6 +17,9 @@ namespace Calculs
             string choix; // saisie du choix de l'utilsiateur
             bool correct; // mémorise si la saisie est un entier
 
+            val1 = rand.Next(1, 10);
+            val2 = rand.Next(1, 10);
+
             // boucle sur le menu
             choix = "1";
             while (choix != "0")
@@ -31,8 +34,6 @@ namespace Calculs
                 switch (choix)
                 {
                     case "1": // addition
-                        val1 = rand.Next(1, 10);
-                        val2 = rand.Next(1, 10);
                         // saisie de la réponse
                         correct = false;
                         while (!correct)
